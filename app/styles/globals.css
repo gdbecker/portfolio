@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@font-face {
+  font-family: Aileron-Regular;
+  src: url(../../public/Aileron/Aileron-Regular.otf);
+}
+
+@font-face {
+  font-family: Aileron-SemiBold;
+  src: url(../../public/Aileron/Aileron-SemiBold.otf);
+}
+
+@font-face {
+  font-family: DDin-Regular;
+  src: url(../../public/D-Din/D-DIN.otf);
+}
+
+@font-face {
+  font-family: DDin-Bold;
+  src: url(../../public/D-Din/D-DIN-Bold.otf);
+}
+
+@font-face {
+  font-family: Cardo-Regular;
+  src: url(../../public/Cardo/Cardo-Regular.ttf);
+}
+
+@font-face {
+  font-family: Cardo-Bold;
+  src: url(../../public/Cardo/Cardo-Bold.ttf);
+}
+
+@font-face {
+  font-family: Quattrocento-Regular;
+  src: url(../../public/Quattrocento/Quattrocento-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quattrocento-Bold;
+  src: url(../../public/Quattrocento/Quattrocento-Bold.ttf);
+}
