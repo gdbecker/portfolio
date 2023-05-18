@@ -27,7 +27,7 @@ module.exports = {
     extend: {
       fontFamily: {
         aileronRegular: "Aileron-Regular",
-        aileronBold: "Aileron-Bold",
+        aileronSemiBold: "Aileron-SemiBold",
         ddinRegular: "DDin-Regular",
         ddinBold: "DDin-Bold",
         cardoRegular: "Cardo-Regular",
