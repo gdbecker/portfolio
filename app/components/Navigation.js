@@ -16,11 +16,11 @@ function Navigation() {
         about
       </a>
 
-      <a class="flex items-center justify-center w-12 h-14 md:h-20 hover:text-themeOrange md:-rotate-90" href="#">
+      <a class="flex items-center justify-center w-12 h-14 md:h-20 hover:text-themeOrange md:-rotate-90" href="#work">
         work
       </a>
 
-      <a class="flex items-center justify-center w-12 h-14 md:h-20 hover:text-themeOrange md:-rotate-90" href="#">
+      <a class="flex items-center justify-center w-12 h-14 md:h-20 hover:text-themeOrange md:-rotate-90" href="#contact">
         contact
       </a>
       <div className="flex items-center justify-between border-l-2 border-themeGray md:border-l-0 md:border-t-2 md:flex-col">

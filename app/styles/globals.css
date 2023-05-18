@@ -59,22 +59,22 @@
 }
 
 .bg-work-section {
-  background-image: url(../../public/bg/bg-pikes-peak.JPG);
+  background-image: url(../../public/bg/bg-salzburg.JPG);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 
 .bg-test-section {
-  background-image: url(../../public/bg/pattern-topography-blue.svg), url(../../public/bg/pattern-square.svg);
+  background-image: url(../../public/bg/pattern-square.svg);
   background-repeat: repeat;
   background-position: 50%;
-  background-size: 60%;
+  background-size: 20%;
 }
 
 .bg-test-section-2 {
   background-image: url(../../public/bg/pattern-topography-blue.svg);
   background-repeat: repeat;
   background-position: 10% 50%;
-  background-size: 80%;
+  background-size: 60%;
 }
