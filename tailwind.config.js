@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 /* ColorHunt palette link: https://colorhunt.co/palette/e8e2dbfab95bf5564e1a3263 */
+/* Tailwind Elements navbar https://tailwind-elements.com/docs/standard/navigation/sidenav/# */
 
 module.exports = {
   darkMode: "class",
@@ -18,10 +19,10 @@ module.exports = {
       "lightGrey": "#DBDBDB",
       "grayishBlue": "#7B879D",
       "darkBlue": "#1F3251",
-      "navy": "#1A3263",
-      "red": "#F5564E",
-      "orange": "#FAB95B",
-      "gray": "#E8E2DB",
+      "themeNavy": "#1A3263",
+      "themeRed": "#F5564E",
+      "themeOrange": "#FAB95B",
+      "themeGray": "#E8E2DB",
     },
     extend: {
       fontFamily: {
