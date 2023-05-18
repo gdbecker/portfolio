@@ -3,7 +3,7 @@ import './styles/globals.css'
 import Navigation from './components/Navigation'
 
 export const metadata = {
-  title: 'GB Portfolio',
+  title: "Garrett Becker - Developer",
   description: "Garrett Becker's portfolio!",
 }
 

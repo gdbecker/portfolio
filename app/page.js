@@ -26,7 +26,7 @@ function Home() {
       <div className="flex flex-row">
         <div className="flex flex-col min-h-screen w-full p-12 text-white bg-themeGray">
           <section id="about" className="relative">
-            <div className="absolute z-10 ml-24 bg-themeGray px-5 pb-8 w-full md:ml-36">
+            <div className="absolute z-10 ml-20 bg-themeGray px-5 pb-8 w-[50vw] md:ml-24">
               <h1 className="font-aileronSemiBold text-7xl">My Skills</h1>
               <p className="text-lg text-black font-cardoRegular">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -41,18 +41,20 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row">
-        <div className="flex flex-col min-h-screen w-full bg-work-section">   
-          <div className="flex w-full h-screen backdrop-blur-sm bg-grayishBlue/30">
+      <div className="flex flex-row bg-test-section">
+        <div className="relative flex flex-col min-h-screen w-full">   
+          <div className="flex w-full h-screen bg-test-background-2">
           </div>
         </div>
-        <div className="flex flex-col min-h-screen w-full p-12 text-white bg-themeGray bg-test-section">
-          <section id="intro">
-            <h1 className="font-aileronSemiBold text-7xl">My Work</h1>
-            <p className="text-lg text-black font-cardoRegular leading-8 w-64">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Eget sit amet tellus cras adipiscing enim eu. 
-            </p>
+        <div className="flex flex-col min-h-screen w-full p-12 text-white">
+          <section id="intro" className="relative">
+            <div className="absolute ml-0 z-10 bg-themeGray px-5 pb-8 w-full">
+              <h1 className="font-aileronSemiBold text-7xl">My Work</h1>
+              <p className="text-lg text-black font-cardoRegular">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Eget sit amet tellus cras adipiscing enim eu. 
+              </p>
+            </div>
           </section>
         </div>
       </div>

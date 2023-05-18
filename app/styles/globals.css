@@ -44,30 +44,37 @@
 }
 
 /* Section backgrounds */
-.bg-intro-section{
+.bg-intro-section {
   background-image: url(../../public/bg/bg-colorado-creede.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
 }
 
-.bg-about-section{
+.bg-about-section {
   background-image: url(../../public/bg/bg-prague-garden.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.bg-work-section{
+.bg-work-section {
   background-image: url(../../public/bg/bg-pikes-peak.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.bg-test-section{
-  background-image: url(../../public/bg/bg-vector-wave.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+.bg-test-section {
+  background-image: url(../../public/bg/pattern-topography-blue.svg), url(../../public/bg/pattern-square.svg);
+  background-repeat: repeat;
+  background-position: 50%;
+  background-size: 60%;
+}
+
+.bg-test-section-2 {
+  background-image: url(../../public/bg/pattern-topography-blue.svg);
+  background-repeat: repeat;
+  background-position: 10% 50%;
+  background-size: 80%;
 }
