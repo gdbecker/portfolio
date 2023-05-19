@@ -15,8 +15,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" ></link>
 
-        
-        
         <Providers>
           <Navigation />
           {children}

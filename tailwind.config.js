@@ -36,6 +36,11 @@ module.exports = {
         quattrocentoBold: "Quattrocento-Bold",
       },
     },
+    variants: {
+      extend: {
+        backgroundImage: ["dark"],
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),

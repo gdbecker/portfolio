@@ -65,15 +65,29 @@
   background-position: right;
 }
 
-.bg-test-section {
+.bg-square {
   background-image: url(../../public/bg/pattern-square.svg);
   background-repeat: repeat;
   background-position: 50%;
   background-size: 20%;
 }
 
-.bg-test-section-2 {
+.dark .dark\:bg-square-dark {
+  background-image: url(../../public/bg/pattern-square-dark.svg);
+  background-repeat: repeat;
+  background-position: 50%;
+  background-size: 20%;
+}
+
+.bg-topography {
   background-image: url(../../public/bg/pattern-topography-blue.svg);
+  background-repeat: repeat;
+  background-position: 10% 50%;
+  background-size: 60%;
+}
+
+.dark .dark\:bg-topography-dark {
+  background-image: url(../../public/bg/pattern-topography-gray.svg);
   background-repeat: repeat;
   background-position: 10% 50%;
   background-size: 60%;
