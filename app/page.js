@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image'
 import LoadingPage from './loading';
@@ -32,7 +32,7 @@ function Home() {
       )
       .then((result) => {
         // Show success message
-        alert("Message has been sent ! Garrett will get in touch soon!");
+        alert("Message has been sent! Garrett will get in touch soon!");
       }, (error) => {
         // Show error message
         alert("Error sending message, try again later");
@@ -109,8 +109,8 @@ function Home() {
             <div id="contact" className="p-5 ml-[-70px] mb-10 bg-themeGray w-full dark:bg-themeNavy">
               <h1 className="pb-5 font-aileronSemiBold text-4xl">Let's chat!</h1>
               <form className="" onSubmit={handleSubmit}>
-                <div class="mb-4">
-                  <label class="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="name">
+                <div className="mb-4">
+                  <label className="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="name">
                     name
                   </label>
                   <input 
@@ -121,8 +121,8 @@ function Home() {
                     required
                   />
                 </div>
-                <div class="mb-4">
-                  <label class="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="phone">
+                <div className="mb-4">
+                  <label className="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="phone">
                     phone number
                   </label>
                   <input 
@@ -132,8 +132,8 @@ function Home() {
                     placeholder="phone number"
                   />
                 </div>
-                <div class="mb-4">
-                  <label class="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="email">
+                <div className="mb-4">
+                  <label className="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="email">
                     email
                   </label>
                   <input 
@@ -144,8 +144,8 @@ function Home() {
                     required
                   />
                 </div>
-                <div class="mb-4">
-                  <label class="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="message">
+                <div className="mb-4">
+                  <label className="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="message">
                     message
                   </label>
                   <textarea 
@@ -153,7 +153,7 @@ function Home() {
                     id="message" 
                     type="text" 
                     placeholder="message"
-                    minlength="10"
+                    minLength="10"
                     required
                   />
                 </div>
