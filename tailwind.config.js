@@ -4,7 +4,6 @@
 /* Tailwind Elements navbar https://tailwind-elements.com/docs/standard/navigation/sidenav/# */
 
 module.exports = {
-  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +11,7 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       "white": "#FFFFFF",
@@ -35,9 +35,6 @@ module.exports = {
         quattrocentoRegular: "Quattrocento-Regular",
         quattrocentoBold: "Quattrocento-Bold",
       },
-      backgroundImage: {
-        'bgHome' : "url('/public/bg/bg-charlotte-sky.JPG')",
-      }
     },
   },
   plugins: [
