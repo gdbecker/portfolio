@@ -92,3 +92,7 @@
   background-position: 10% 50%;
   background-size: 60%;
 }
+
+.vscode-img:hover .vscode-desc {
+  visibility: visible;
+}

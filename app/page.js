@@ -2,6 +2,25 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image'
+
+import ReactImg from '../public/skills/react.png';
+import BootstrapImg from '../public/skills/bootstrap.png';
+import TailwindImg from '../public/skills/tailwind.svg';
+import SassImg from '../public/skills/sass.png';
+
+import PythonImg from '../public/skills/python.png';
+import DjangoImg from '../public/skills/django.png';
+import FlaskImg from '../public/skills/flask.png';
+import NodeJsImg from '../public/skills/nodejs.png';
+import JWTImg from '../public/skills/jwt.svg';
+import ReduxJsImg from '../public/skills/reduxjs.svg';
+import SQLiteImg from '../public/skills/sqlite.png';
+
+import VSCodeImg from '../public/skills/vscode.png';
+import PyCharmImg from '../public/skills/pycharm.png';
+import AdobeXDImg from '../public/skills/adobexd.png';
+import PowerBIImg from '../public/skills/powerbi.png';
+
 import LoadingPage from './loading';
 
 function Home() {
@@ -65,20 +84,100 @@ function Home() {
         </div>
 
         <div className="flex flex-row">
-          <div className="flex flex-col min-h-screen w-full p-12 text-white">
-            <section id="about" className="relative">
-              <div className="absolute z-10 ml-20 bg-themeGray px-5 pb-8 w-[50vw] md:ml-24 dark:bg-themeNavy">
+          <div className="relative flex flex-col min-h-screen w-fit p-12 text-white text-right">
+            <section id="about" className="relative flex z-30 w-[60vw] bg-themeGray px-10 py-8 dark:bg-themeNavy mr-[-100px] md:ml-3">
+              <div className="">
                 <h1 className="font-aileronSemiBold text-7xl">My Skills</h1>
                 <p className="text-lg text-black font-cardoRegular dark:text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                  aliqua. Eget sit amet tellus cras adipiscing enim eu. 
+                  These are current tools in my repertoire I love building with, and I always enjoy experimenting and trying out new things. 
+                  It's my goal to keep learning and growing as much as I can!
                 </p>
+                <div className="py-4 pr-2">
+                  <div className="grid grid-cols-8 gap-4">
+                    <div className="col-span-7">
+                      <div className="flex flex-wrap h-full items-center justify-end gap-4">
+                        <a className="flex" href="https://react.dev" target="_blank" rel="noopener noreferrer">
+                          <Image src={ReactImg} alt="React" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={BootstrapImg} alt="Bootstrap" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={TailwindImg} alt="Tailwind" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://sass-lang.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={SassImg} alt="Sass" width={50} height={50}/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
+                      <h2 className="text-md" style={{ writingMode: 'vertical-rl' }}>front end</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="py-4 pr-2">
+                  <div className="grid grid-cols-8 gap-4">
+                    <div className="col-span-7">
+                      <div className="flex flex-wrap h-full items-center justify-end gap-4">
+                        <a className="flex" href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+                          <Image src={PythonImg} alt="Python" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://www.djangoproject.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={DjangoImg} alt="Django" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://flask.palletsprojects.com/en/2.3.x/" target="_blank" rel="noopener noreferrer">
+                          <Image src={FlaskImg} alt="Flask" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">
+                          <Image src={NodeJsImg} alt="NodeJs" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://jwt.io" target="_blank" rel="noopener noreferrer">
+                          <Image src={JWTImg} alt="JWT" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://redux.js.org" target="_blank" rel="noopener noreferrer">
+                          <Image src={ReduxJsImg} alt="ReduxJs" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://www.sqlite.org/index.html" target="_blank" rel="noopener noreferrer">
+                          <Image src={SQLiteImg} alt="SQLite" width={50} height={50}/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
+                      <h2 className="text-md" style={{ writingMode: 'vertical-rl' }}>back end</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="py-4 pr-2">
+                  <div className="grid grid-cols-8 gap-4">
+                    <div className="col-span-7">
+                      <div className="flex flex-wrap h-full items-center justify-end gap-4">
+                        <a className="flex" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={VSCodeImg} alt="VSCode" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener noreferrer">
+                          <Image src={PyCharmImg} alt="PyCharm" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://helpx.adobe.com/xd/user-guide.html" target="_blank" rel="noopener noreferrer">
+                          <Image src={AdobeXDImg} alt="AdobeXD" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://powerbi.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
+                          <Image src={PowerBIImg} alt="PowerBI" width={50} height={50}/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
+                      <h2 className="text-md" style={{ writingMode: 'vertical-rl' }}>apps</h2>
+                    </div>
+                  </div>
+                </div>
+              
+               
               </div>
             </section>
           </div>
           <div className="relative flex flex-col min-h-screen w-full bg-about-section">   
-            <div className="flex w-full h-screen ">
-            </div>
+            {/* <div className="flex w-full h-screen ">
+            </div> */}
           </div>
         </div>
 
@@ -107,7 +206,7 @@ function Home() {
           </div>
           <div className="relative flex flex-col min-h-screen w-full p-1 pt-12 text-white">
             <div id="contact" className="p-5 ml-[-70px] mb-10 bg-themeGray w-full dark:bg-themeNavy">
-              <h1 className="pb-5 font-aileronSemiBold text-4xl">Let's chat!</h1>
+              <h1 className="pb-5 font-aileronSemiBold text-4xl">let's chat!</h1>
               <form className="" onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label className="block text-black text-sm font-bold mb-2 dark:text-white" htmlFor="name">
@@ -158,7 +257,7 @@ function Home() {
                   />
                 </div>
                 <button className="bg-themeNavy px-10 py-4 mb-12 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
-                  Send Message
+                  send message
                 </button>
               </form>
             </div>
