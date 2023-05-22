@@ -177,7 +177,7 @@ function Home() {
                       </div>
                     </div>
                     <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
-                      <h2 className="text-md" style={{ writingMode: 'vertical-rl' }}>apps</h2>
+                      <h2 className="text-md [writing-mode:vertical-lr]">apps</h2>
                     </div>
                   </div>
                 </div>
@@ -207,8 +207,8 @@ function Home() {
                       <h1 className="text-lg text-themeNavy dark:text-themeGray">HikingVentures Full-Stack App</h1>
                     </div>
                     
-                    <div className="flex flex-col md:flex-row">
-                      <div className="relative carousel w-full py-2 md:pr-2">
+                    <div className="flex flex-col h-fit justify-between md:flex-row ">
+                      <div className="relative carousel h-full w-full pt-2 md:pr-2">
                         <div id="slide1" className="relative carousel-item w-full">
                           <div className="bg-about-section h-80 w-full"></div>
                           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -231,18 +231,18 @@ function Home() {
                           </div>
                         </div> 
                       </div>
-                      <div className="flex flex-row gap-2 items-center justify-between md:flex-col">
-                        <button className="bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                      <div className="flex flex-row gap-2 pt-2 items-center justify-between md:flex-wrap md:w-24">
+                        <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
                           <a class="" href="https://github.com/gdbecker" target="_blank" rel="noopener noreferrer">
                             <FaGithub />
                           </a>
                         </button>
-                        <button className="bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                        <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
                           <a class="" href="/" target="_blank" rel="noopener noreferrer">
                             <BiMoviePlay />
                           </a>
                         </button>
-                        <h2 className="text-right text-themeNavy dark:text-themeGray">Personal project, lead developer and designer</h2>
+                        <h2 className="flex text-right md:h-44 text-themeNavy break-normal dark:text-themeGray md:text-left md:[writing-mode:vertical-lr]">Personal project, lead developer and designer</h2>
                       </div>
 
                       
