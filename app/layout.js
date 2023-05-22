@@ -1,9 +1,10 @@
 import './styles/globals.css'
+// import 'bootstrap/dist/css/bootstrap.css';
 import Navigation from './components/Navigation';
 import {Providers} from './providers';
 
 export const metadata = {
-  title: "Garrett Becker - Developer",
+  title: "Garrett Becker - Full-Stack Developer",
   description: "Garrett Becker's portfolio!",
 }
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
       <body>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" ></link>
+          href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+        <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+        
 
         <Providers>
           <Navigation />

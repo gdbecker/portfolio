@@ -43,6 +43,11 @@
   src: url(../../public/Quattrocento/Quattrocento-Bold.ttf);
 }
 
+/* Page scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Section backgrounds */
 .bg-intro-section {
   background-image: url(../../public/bg/bg-colorado-creede.JPG);
@@ -58,7 +63,7 @@
   background-position: center;
 }
 
-.bg-work-section {
+.bg-contact-section {
   background-image: url(../../public/bg/bg-salzburg.JPG);
   background-repeat: no-repeat;
   background-size: cover;

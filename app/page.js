@@ -1,7 +1,9 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image'
+import { FaGithub } from 'react-icons/fa';
+import { BiMoviePlay } from 'react-icons/bi';
 
 import ReactImg from '../public/skills/react.png';
 import BootstrapImg from '../public/skills/bootstrap.png';
@@ -24,6 +26,17 @@ import PowerBIImg from '../public/skills/powerbi.png';
 import LoadingPage from './loading';
 
 function Home() {
+
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   import ('bootstrap/dist/js/bootstrap.min.js');
+  //   setLoading(false);
+  // }, []);
+
+  // if (loading) {
+  //   return <LoadingPage />
+  // }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -66,8 +79,6 @@ function Home() {
       <div className="font-aileronRegular bg-themeGray dark:bg-themeNavy">
         <div className="flex flex-row mb-[-20px] z-20">
           <div className="flex flex-col basis-1/2 min-h-screen w-full bg-intro-section">   
-            {/* <div className="flex w-full h-screen backdrop-blur-sm bg-grayishBlue/30">
-            </div> */}
           </div>
           <div className="flex flex-col min-h-screen w-full p-12 pt-0 text-white bg-topography dark:bg-topography-dark">
             <section id="intro" className="bg-themeGray dark:bg-themeNavy">
@@ -175,34 +186,78 @@ function Home() {
               </div>
             </section>
           </div>
-          <div className="relative flex flex-col min-h-screen w-full bg-about-section">   
-            {/* <div className="flex w-full h-screen ">
-            </div> */}
+          <div className="relative flex flex-col min-h-screen w-full bg-about-section">
           </div>
         </div>
 
-        <div className="flex flex-row mt-[-20px] mb-[-20px] bg-square dark:bg-square-dark">
-          {/* <div className="relative flex flex-col min-h-screen w-full">    */}
-            <div className="flex w-full h-screen text-white bg-topography dark:bg-topography-dark">
-              <section id="work" className="w-fit pl-28 pr-10 pt-10 te z-20xt-right items-center justify-center">
-                <div className="bg-themeGray px-10 py-5 dark:bg-themeNavy">
-                  <h1 className="font-aileronSemiBold text-7xl">My Work</h1>
-                  <p className="text-lg text-black font-cardoRegular dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Eget sit amet tellus cras adipiscing enim eu. 
-                  </p>
+        <div className="relative flex flex-row mt-[-20px] mb-[-20px] bg-square dark:bg-square-dark">
+          <div className="relative flex w-full min-h-screen text-white bg-topography dark:bg-topography-dark">
+            <section id="work" className="relative w-fit pl-10 pr-10 pt-10 z-20 text-center items-center justify-center md:pl-28">
+              <div className="bg-themeGray px-10 py-5 mb-10 dark:bg-themeNavy">
+                <h1 className="font-aileronSemiBold text-7xl">My Work</h1>
+                <p className="text-lg text-black font-cardoRegular dark:text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Eget sit amet tellus cras adipiscing enim eu. 
+                </p>
+
+                <div className="py-2">
+                  <div className="flex flex-col">
+                    <div className="flex flex-row gap-2 items-end justify-between">
+                      <h1 className="">01</h1>
+                      <h1 className="text-lg text-themeNavy dark:text-themeGray">HikingVentures Full-Stack App</h1>
+                    </div>
+                    
+                    <div className="flex flex-col md:flex-row">
+                      <div className="relative carousel w-full py-2 md:pr-2">
+                        <div id="slide1" className="relative carousel-item w-full">
+                          <div className="bg-about-section h-80 w-full"></div>
+                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a> 
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                          </div>
+                        </div>
+                        <div id="slide2" className="relative carousel-item w-full">
+                          <div className="bg-contact-section h-80 w-full"></div>
+                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a> 
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                          </div>
+                        </div> 
+                        <div id="slide3" className="relative carousel-item w-full">
+                          <div className="bg-intro-section h-80 w-full"></div>
+                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a> 
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                          </div>
+                        </div> 
+                      </div>
+                      <div className="flex flex-row gap-2 items-center justify-between md:flex-col">
+                        <button className="bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                          <a class="" href="https://github.com/gdbecker" target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
+                          </a>
+                        </button>
+                        <button className="bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                          <a class="" href="/" target="_blank" rel="noopener noreferrer">
+                            <BiMoviePlay />
+                          </a>
+                        </button>
+                        <h2 className="text-right text-themeNavy dark:text-themeGray">Personal project, lead developer and designer</h2>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                  
+
                 </div>
-                
-              </section>
-            </div>
-          {/* </div> */}
-          {/* <div className="min-h-screen w-full p-12 text-white"> */}
-            
-          {/* </div> */}
+              </div>
+            </section>
+          </div>
         </div>
 
         <section className="flex flex-row">
-          <div className="relative flex flex-col min-h-screen w-full bg-work-section">   
+          <div className="relative flex flex-col min-h-screen w-full bg-contact-section">   
           </div>
           <div className="relative flex flex-col min-h-screen w-full p-1 pt-12 text-white">
             <div id="contact" className="p-5 ml-[-70px] mb-10 bg-themeGray w-full dark:bg-themeNavy">
