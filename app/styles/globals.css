@@ -74,14 +74,14 @@ html {
   background-image: url(../../public/bg/pattern-square.svg);
   background-repeat: repeat;
   background-position: 50%;
-  background-size: 20%;
+  background-size: 15%;
 }
 
 .dark .dark\:bg-square-dark {
   background-image: url(../../public/bg/pattern-square-dark.svg);
   background-repeat: repeat;
   background-position: 50%;
-  background-size: 20%;
+  background-size: 15%;
 }
 
 .bg-topography {

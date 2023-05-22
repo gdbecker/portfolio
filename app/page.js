@@ -6,6 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 import { BiMoviePlay } from 'react-icons/bi';
 
 import ReactImg from '../public/skills/react.png';
+import NextJsImg from '../public/skills/nextjs.svg';
 import BootstrapImg from '../public/skills/bootstrap.png';
 import TailwindImg from '../public/skills/tailwind.svg';
 import SassImg from '../public/skills/sass.png';
@@ -18,10 +19,13 @@ import JWTImg from '../public/skills/jwt.svg';
 import ReduxJsImg from '../public/skills/reduxjs.svg';
 import SQLiteImg from '../public/skills/sqlite.png';
 
+import AnacondaImg from '../public/skills/anaconda.png';
+import JupyterImg from '../public/skills/jupyter.png';
+import PowerBIImg from '../public/skills/powerbi.png';
+
 import VSCodeImg from '../public/skills/vscode.png';
 import PyCharmImg from '../public/skills/pycharm.png';
 import AdobeXDImg from '../public/skills/adobexd.png';
-import PowerBIImg from '../public/skills/powerbi.png';
 
 import LoadingPage from './loading';
 
@@ -110,6 +114,9 @@ function Home() {
                         <a className="flex" href="https://react.dev" target="_blank" rel="noopener noreferrer">
                           <Image src={ReactImg} alt="React" width={50} height={50}/>
                         </a>
+                        <a className="flex" href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
+                          <Image src={NextJsImg} alt="NextJs" width={50} height={50}/>
+                        </a>
                         <a className="flex" href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">
                           <Image src={BootstrapImg} alt="Bootstrap" width={50} height={50}/>
                         </a>
@@ -162,6 +169,26 @@ function Home() {
                   <div className="grid grid-cols-8 gap-4">
                     <div className="col-span-7">
                       <div className="flex flex-wrap h-full items-center justify-end gap-4">
+                        <a className="flex" href="https://www.anaconda.com" target="_blank" rel="noopener noreferrer">
+                          <Image src={AnacondaImg} alt="Anaconda" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://jupyter.org" target="_blank" rel="noopener noreferrer">
+                          <Image src={JupyterImg} alt="Jupyter" width={50} height={50}/>
+                        </a>
+                        <a className="flex" href="https://powerbi.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
+                          <Image src={PowerBIImg} alt="PowerBI" width={50} height={50}/>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
+                      <h2 className="text-md" style={{ writingMode: 'vertical-rl' }}>analytics</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="py-4 pr-2">
+                  <div className="grid grid-cols-8 gap-4">
+                    <div className="col-span-7">
+                      <div className="flex flex-wrap h-full items-center justify-end gap-4">
                         <a className="flex" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
                           <Image src={VSCodeImg} alt="VSCode" width={50} height={50}/>
                         </a>
@@ -170,10 +197,7 @@ function Home() {
                         </a>
                         <a className="flex" href="https://helpx.adobe.com/xd/user-guide.html" target="_blank" rel="noopener noreferrer">
                           <Image src={AdobeXDImg} alt="AdobeXD" width={50} height={50}/>
-                        </a>
-                        <a className="flex" href="https://powerbi.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
-                          <Image src={PowerBIImg} alt="PowerBI" width={50} height={50}/>
-                        </a>
+                        </a>    
                       </div>
                     </div>
                     <div className="flex col-span-1 px-4 py-5 items-end justify-center bg-themeNavy text-themeGray dark:bg-themeGray dark:text-themeNavy">
@@ -181,8 +205,6 @@ function Home() {
                     </div>
                   </div>
                 </div>
-              
-               
               </div>
             </section>
           </div>
@@ -190,7 +212,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative flex flex-row mt-[-20px] mb-[-20px] bg-square dark:bg-square-dark">
+        <div className="flex flex-row mt-[-20px] mb-[-20px] bg-square dark:bg-square-dark">
           <div className="relative flex w-full min-h-screen text-white bg-topography dark:bg-topography-dark">
             <section id="work" className="relative w-fit pl-10 pr-10 pt-10 z-20 text-center items-center justify-center md:pl-28">
               <div className="bg-themeGray px-10 py-5 mb-10 dark:bg-themeNavy">
@@ -200,49 +222,99 @@ function Home() {
                   aliqua. Eget sit amet tellus cras adipiscing enim eu. 
                 </p>
 
-                <div className="py-2">
+                <div className="">
                   <div className="flex flex-col">
-                    <div className="flex flex-row gap-2 items-end justify-between">
-                      <h1 className="">01</h1>
-                      <h1 className="text-lg text-themeNavy dark:text-themeGray">HikingVentures Full-Stack App</h1>
-                    </div>
                     
-                    <div className="flex flex-col h-fit justify-between md:flex-row ">
-                      <div className="relative carousel h-full w-full pt-2">
-                        <div id="slide1" className="relative carousel-item w-full">
-                          <div className="bg-about-section h-80 w-full"></div>
-                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" className="btn btn-circle">❮</a> 
-                            <a href="#slide2" className="btn btn-circle">❯</a>
-                          </div>
-                        </div>
-                        <div id="slide2" className="relative carousel-item w-full">
-                          <div className="bg-contact-section h-80 w-full"></div>
-                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" className="btn btn-circle">❮</a> 
-                            <a href="#slide3" className="btn btn-circle">❯</a>
-                          </div>
-                        </div> 
-                        <div id="slide3" className="relative carousel-item w-full">
-                          <div className="bg-intro-section h-80 w-full"></div>
-                          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" className="btn btn-circle">❮</a> 
-                            <a href="#slide1" className="btn btn-circle">❯</a>
-                          </div>
-                        </div> 
+                    
+                    <div className="flex flex-col h-fit justify-between">
+                      <div className="flex flex-row gap-2 items-end justify-between">
+                        <h1 className="">01</h1>
+                        <h1 className="text-lg text-themeNavy dark:text-themeGray">HikingVentures Full-Stack App</h1>
                       </div>
-                      <div className="flex flex-row gap-2 pt-2 items-center justify-between md:flex-wrap md:w-24 md:pt-1 md:pl-2 md:justify-center">
-                        <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
-                          <a class="" href="https://github.com/gdbecker" target="_blank" rel="noopener noreferrer">
-                            <FaGithub />
-                          </a>
-                        </button>
-                        <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
-                          <a class="" href="/" target="_blank" rel="noopener noreferrer">
-                            <BiMoviePlay />
-                          </a>
-                        </button>
-                        <h2 className="flex text-right md:h-44 text-themeNavy break-normal dark:text-themeGray md:text-left md:[writing-mode:vertical-rl]">Personal project, lead developer and designer</h2>
+                      <div className="flex flex-col py-2 md:flex-row">
+                        <div className="relative carousel h-full w-full pt-2">
+                          <div id="slide1" className="relative carousel-item w-full">
+                            <div className="bg-about-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide3" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide2" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div>
+                          <div id="slide2" className="relative carousel-item w-full">
+                            <div className="bg-contact-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide1" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide3" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div> 
+                          <div id="slide3" className="relative carousel-item w-full">
+                            <div className="bg-intro-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide2" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide1" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div> 
+                        </div>
+                        <div className="flex flex-row gap-2 pt-2 items-center justify-between md:flex-wrap md:w-24 md:pt-1 md:pl-2 md:justify-center">
+                          <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                            <a class="" href="https://github.com/gdbecker" target="_blank" rel="noopener noreferrer">
+                              <FaGithub />
+                            </a>
+                          </button>
+                          <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                            <a class="" href="/" target="_blank" rel="noopener noreferrer">
+                              <BiMoviePlay />
+                            </a>
+                          </button>
+                          <h2 className="flex text-right md:h-44 text-themeNavy break-normal dark:text-themeGray md:text-left md:[writing-mode:vertical-rl]">
+                            Personal project. Lead developer and designer.
+                          </h2>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-row gap-2 items-end justify-between">
+                        <h1 className="">02</h1>
+                        <h1 className="text-lg text-themeNavy dark:text-themeGray">Frontend Mentor Projects</h1>
+                      </div>
+                      <div className="flex flex-col py-2 md:flex-row">
+                        <div className="relative carousel h-full w-full pt-2">
+                          <div id="slide1" className="relative carousel-item w-full">
+                            <div className="bg-about-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide3" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide2" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div>
+                          <div id="slide2" className="relative carousel-item w-full">
+                            <div className="bg-contact-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide1" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide3" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div> 
+                          <div id="slide3" className="relative carousel-item w-full">
+                            <div className="bg-intro-section h-80 w-full"></div>
+                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                              <a href="#slide2" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❮</a> 
+                              <a href="#slide1" className="btn rounded-none border-0 bg-themeOrange hover:bg-themeNavy">❯</a>
+                            </div>
+                          </div> 
+                        </div>
+                        <div className="flex flex-row gap-2 pt-2 items-center justify-between md:flex-wrap md:w-24 md:pt-1 md:pl-2 md:justify-center">
+                          <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                            <a class="" href="https://github.com/gdbecker" target="_blank" rel="noopener noreferrer">
+                              <FaGithub />
+                            </a>
+                          </button>
+                          <button className="flex bg-themeNavy p-5 hover:bg-themeOrange dark:bg-themeGray dark:text-themeNavy dark:hover:bg-themeOrange">
+                            <a class="" href="/" target="_blank" rel="noopener noreferrer">
+                              <BiMoviePlay />
+                            </a>
+                          </button>
+                          <h2 className="flex text-right md:h-44 text-themeNavy break-normal dark:text-themeGray md:text-left md:[writing-mode:vertical-rl]">
+                            Challenge projects to grow in front-end development.
+                          </h2>
+                        </div>
                       </div>
 
                       
